@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a67262ed70.js" crossorigin="anonymous"></script>
+
     <style>
         .font-manrope{
             font-family: "Manrope", sans-serif;
@@ -19,6 +22,84 @@
     </style>
 </head>
 <body>
-    
+    <header class="font-manrope ">
+        <div class=" max-w-[1270px] mx-auto my-10 lg:px-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </div>
+                  <a class=" text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="mr-5 hidden lg:block"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a class="btn px-6 py-4 bg-[#FF4240] text-white rounded-lg font-bold">Get Ticket</a>
+                </div>
+              </div>
+        </div>
+        <!-- banner section -->
+        <section class="max-w-[1170px] mx-auto my-10">
+          <div class="px-3">
+            <div class="carousel w-full ">
+              <div id="slide1" class="carousel-item relative w-full ">
+                <img src="Images/1.png" class=" object-cover h-[220px] lg:h-[550px] rounded-2xl" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-normal lg:left-[40px] lg:top-[480px] lg:gap-4">
+                  <a href="#slide4" class="btn btn-circle  bg-black text-[24px] text-white border-none">❮</a> 
+                  <a href="#slide2" class="btn btn-circle  bg-black text-[24px] text-white border-none">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/h2.png" class=" object-cover rounded-2xl h-[220px] lg:h-[550px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-normal lg:left-[40px] lg:top-[480px] lg:gap-4 ">
+                  <a href="#slide1" class="btn btn-circle bg-black text-[24px] text-white border-none">❮</a> 
+                  <a href="#slide3" class="btn btn-circle bg-black text-[24px] text-white border-none">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full ">
+                <img src="Images/1.png" class=" object-cover h-[220px] lg:h-[550px] rounded-2xl" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-normal lg:left-[40px] lg:top-[480px] lg:gap-4">
+                  <a href="#slide2" class="btn btn-circle  bg-black text-[24px] text-white border-none">❮</a> 
+                  <a href="#slide4" class="btn btn-circle  bg-black text-[24px] text-white border-none">❯</a>
+                </div>
+              </div>
+              <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/h2.png" class=" object-cover rounded-2xl h-[220px] lg:h-[550px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-normal lg:left-[40px] lg:top-[480px] lg:gap-4 ">
+                  <a href="#slide3" class="btn btn-circle bg-black text-[24px] text-white border-none">❮</a> 
+                  <a href="#slide1" class="btn btn-circle bg-black text-[24px] text-white border-none">❯</a>
+                  <div><h1>my name is sohan</h1></div>
+                </div>
+              </div> 
+            </div>
+            <div class="lg:absolute lg:bottom-24 lg:right-64 lg:w-[560px] mt-4 p-4 bg-black text-white rounded-lg lg:p-8 lg:rounded-2xl">
+              <h1 class="mt text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h1>
+              <p class="text-sm lg:text-base font-medium mt-2 lg:mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+          </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
